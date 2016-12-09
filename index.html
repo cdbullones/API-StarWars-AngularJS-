@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Api Star Wars | Angular JS</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+		crossorigin="anonymous">
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="resources/css/app.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="text-center" ng-app="apiApp" ng-controller="apiAppCtrl as vm">
+					<br>
+					<img src="resources/images/Star-Wars.png">
+					<h1>Datos de la Fuerza</h1>
+					<p>Selecciona que quieres ver</p>
+					<div class="center-block list-force">
+						<select class="form-control" ng-model="vm.url" ng-change="vm.buscaEnRegion()">
+							<option selected="selected">Seleccione</option>
+							<option value="http://swapi.co/api/people/?format=json">Personas</option>
+							<option value="http://swapi.co/api/planets/?format=json">Planetas</option>
+							<option value="http://swapi.co/api/vehicles/?format=json">Vehiculos</option>
+							<option value="http://swapi.co/api/species/?format=json">Especies</option>
+						</select>
+					    <br>
+						<ul class="list-group">
+							<li class="list-group-item" ng-repeat="fuerza in vm.fuerzas">
+								<span class="item-force">{{fuerza.name}}</span>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+	<script src="resources/app/app.js"></script>
+</body>
+
+</html>
