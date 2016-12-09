@@ -1,6 +1,6 @@
-# Repositorio de Practicas AngularJS
+# Repositorio Angular API-Star Wars
 
-Repositorio Tipo Portafolio de Practicas Personales en AngularJS.
+Proyecto de scaffolding basico en AngularJS, que muestra los datos consumidos de la API de Star Wars https://swapi.co  segun la seleccion del item realizada por el usuario.
 
 @cdbullones
 
