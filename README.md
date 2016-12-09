@@ -1,2 +1,7 @@
-# API-StarWars-AngularJS-
-Proyecto de scaffolding basico en AgularJS, que muestra los datos consumidos de la API de Star Wars https://swapi.co , segun la selecion del topico realizada por el usuario.
+# Repositorio de Practicas AngularJS
+
+Repositorio Tipo Portafolio de Practicas Personales en AngularJS.
+
+@cdbullones
+
+www.cdbullones.com.ve
